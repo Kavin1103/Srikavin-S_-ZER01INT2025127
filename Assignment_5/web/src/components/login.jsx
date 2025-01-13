@@ -12,7 +12,7 @@ const Login = () => {
     // Email validation
     const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
     if (!email.match(emailPattern)) {
-      setError("Please enter a valid Gmail address.");
+      setError("Enter Valid Mail ID");
       return;
     }
 
@@ -122,7 +122,7 @@ const Login = () => {
                 border: "none",
                 cursor: "pointer",
                 fontSize: "14px",
-                color: "#007BFF",
+                color: "white",
                 fontWeight: "600",
               }}
             >
@@ -151,7 +151,7 @@ const Login = () => {
         </button>
 
         {error && (
-          <p style={{ color: "red", fontSize: "14px", marginTop: "15px" }}>
+          <p style={{ color: "Black", fontSize: "14px", marginTop: "15px" }}>
             {error}
           </p>
         )}
